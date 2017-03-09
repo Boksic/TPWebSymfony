@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <link href="{{ asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <title>TP De Boksic Rodrigo : Acceil</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="titre">
+            <center>
+                <h1>TP WEB BOKSIC RODRIGO</h1>
+            </center>
+        </div>
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href={{ path('tpmath_home') }}>Acceil</a></li>
+                <li><a href={{ path('tpmath_fibo') }}>Fibonacci</a></li>
+                <li><a href={{ path('tpmath_facto') }}>Factorielle</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h3>
+            Bienvenue sur mon site
+        </h3>
+        <br><br>
+        <h4>
+            Vous trouverez sur ce site deux onglets qui vous permettront respectivement de récupérer
+            la suite de fibonacci d'un nombre donné et de calculer le factorielle d'un nombre.
+        </h4>
+        <br><br>
+        <h4>
+            Merci
+        </h4>
+    </div>
+</body>
+</html>

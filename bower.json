@@ -1,0 +1,17 @@
+{
+  "name": "tp",
+  "authors": [
+    "Boksic <boksic.rodrigo@ynov.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

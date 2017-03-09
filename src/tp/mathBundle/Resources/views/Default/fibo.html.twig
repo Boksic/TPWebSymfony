@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="{{ asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <title>TP De Boksic Rodrigo : fibo</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="titre">
+            <center>
+                <h1>TP WEB BOKSIC RODRIGO</h1>
+            </center>
+        </div>
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href={{ path('tpmath_home') }}>Acceil</a></li>
+                <li class="active"><a href={{ path('tpmath_fibo') }}>Fibonacci</a></li>
+                <li><a href={{ path('tpmath_facto') }}>Factorielle</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1>
+                        Fibonacci
+                    </h1>
+                </div>
+
+                <div class="panel-body">
+                    <form action="{{ path('tpmath_fiboPost') }}" method="post" class="form-inline">
+                        <div class="form-group">
+                            <label for="number">Entrer un nombre : </label>
+                            <input type="number" class="form-control" name="number">
+                        </div>
+
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    {% if response is defined %}
+                        {% for item in response %}
+                            {{ item }}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

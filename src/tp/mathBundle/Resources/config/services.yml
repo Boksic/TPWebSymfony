@@ -1,0 +1,4 @@
+services:
+#    tpmath.example:
+#        class: tp\mathBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

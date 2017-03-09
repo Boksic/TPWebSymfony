@@ -1,0 +1,19 @@
+tpmath_home:
+    path:     /
+    defaults: { _controller: tpmathBundle:Default:index }
+
+tpmath_fibo:
+    path:     /fibo
+    defaults: { _controller: tpmathBundle:Default:fibo }
+
+tpmath_fiboPost:
+    path:     /fiboPost
+    defaults: { _controller: tpmathBundle:Default:fiboPost }
+
+tpmath_facto:
+    path:     /facto
+    defaults: { _controller: tpmathBundle:Default:facto }
+
+tpmath_factoPost:
+    path:     /factoPost
+    defaults: { _controller: tpmathBundle:Default:factoPost }
